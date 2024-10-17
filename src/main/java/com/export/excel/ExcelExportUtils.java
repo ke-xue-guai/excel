@@ -122,12 +122,6 @@ public class ExcelExportUtils<S, R, C> {
                         // 通过单元格类型填写value
                         CellType cellType = cell.getCellType();
                         switch (cellType) {
-                            case NUMERIC:
-                                col.value = toStr(cell.getNumericCellValue());
-                                break;
-                            case STRING:
-                                col.value = cell.getStringCellValue();
-                                break;
                             case BOOLEAN:
                                 col.value = toStr(cell.getBooleanCellValue());
                                 break;

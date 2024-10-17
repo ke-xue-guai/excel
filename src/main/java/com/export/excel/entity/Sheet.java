@@ -152,7 +152,7 @@ public class Sheet extends Base {
             rst += getCharacterWidth(font, aChar);
         }
         // 最大宽度字节
-        int max = 255;
+        int max = 18888;
         if (rst > max) {
             rst = max;
         }
